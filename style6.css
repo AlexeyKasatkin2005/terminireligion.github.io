@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	color: black;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+
+	
+	.text-main {
+		background-color: white;
+		text-align: center;
+		position: relative;
+		top: 5%;
+		border: 5px solid;
+		padding: 15px;
+		color: #000;
+
+		font-size: 32px;
+		font-weight: bolder;
+		font-family: Courier New;
+	}
+
+	.nav {
+		float: left;
+		list-style: none;
+		height: 40px;
+		margin-top: -5px;
+		background-color: white;
+		font-family: Arrial;
+		margin-left: 5px;
+
+		a {
+			float: left;
+			width: 200px;
+			height: 100%;
+			margin-left: -5px;
+			
+
+			border: 5px solid black;
+			background-color: white;
+
+			text-align: center;
+			vertical-align: middle;
+			text-decoration: none;
+
+			font-size: larger;
+			font-weight: 600;
+			font-style: normal;
+
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+		}
+
+		a:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+
+main {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: #f8f7df;
+	
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	.main {
+		margin-top: 150px;
+		width: 100%;
+		flex-direction: column;
+
+		margin-left: 20px;
+		display: flex;
+	}
+}
+
+.post {
+	margin-bottom: 15px;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+
+	h2 {
+		grid-column-start: 1;
+		font-weight: bolder;
+		font-family: Arial;
+	}
+
+	.text {
+		padding: 30px;
+		border-left: 1px solid black;
+		grid-column-start: 1;
+		font-weight: 500;
+		font-family: monospace;
+		font-size: 1.3rem;
+		font-style: oblique ;
+		text-align: center;
+		line-height: 1.7;
+	}
+
+	img {
+		max-height: 350px;
+		grid-column-start: 1;
+		border: 5px solid black;
+		background-color: black;
+		
+	}
+}
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	flex-direction: column;
+	font-style: italic;
+	text-align: justify;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+
+
+
+.podval{
+	text-align: center;
+	 font-family:Arial Narrow;
+	 color: white;
+	 float: bottom;
+	 background-color: white;
+	padding-bottom: 5px;
+	font-size: 19px;
+}
+
+
+.sidenav {
+	height: 50%;
+	margin: 140px 0 0 auto;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: white;
+	overflow-x: hidden;
+	float: right;
+	border: 3px solid;
+	border-radius:15px;
+  
+
+	ul li {
+		padding: 6px 6px 6px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		
+  
+		a{
+			color: black;
+		}
+	}
+
+	ul li:hover {
+		color: #f1f1f1;
+	}	
+	  
+}
+
+.anchor{
+   display:block;
+   height:130px; 
+   margin-top:-130px; 
+   visibility:hidden;
+}
+
+
+/*body{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+*/
+.form{
+	width: 300px;
+	padding:32px;
+	border-radius: 10px;
+	box-shadow: 0 4px 16px #ccc;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+.form_input{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size:16px;
+}
+.form_button{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size:16px;
+}
+
+.form_title{
+	text-align:center;
+	margin: 0 0 32px 0;
+	font-weight: normal;
+}
+.form_group{
+	position:relative;
+	margin-bottom: 32px;
+}
+
+.form_label{
+	position:absolute;
+	top:0;
+	z-index: 1;
+	color: #9e9e9e;
+	
+}
+
+.form_input{
+	width: 100%;
+	padding: 0 0 10px 0;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: transparent;
+	outline:none;
+	transition: 0.3s;
+}
+
+.form_button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #d0d1f5;
+	outline: none;
+	cursor: pointer;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~.form_label {
+	top: -18px;
+	font-size: 12px
+	color: #e0e0e0;
+}
+
+* {
+  box-sizing:border-box;
+}
+box {
+  margin:20px;
+  background-color: #fafafa;
+}
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}

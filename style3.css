@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	color: black;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+
+	
+	.text-main {
+		background-color: white;
+		text-align: center;
+		position: relative;
+		top: 5%;
+		border: 5px solid;
+		padding: 15px;
+		color: #000;
+
+		font-size: 32px;
+		font-weight: bolder;
+		font-family: Courier New;
+	}
+
+	.nav {
+		float: left;
+		list-style: none;
+		height: 40px;
+		margin-top: -5px;
+		background-color: white;
+		font-family: Arrial;
+		margin-left: 5px;
+
+		a {
+			float: left;
+			width: 200px;
+			height: 100%;
+			margin-left: -5px;
+			
+
+			border: 5px solid black;
+			background-color: white;
+
+			text-align: center;
+			vertical-align: middle;
+			text-decoration: none;
+
+			font-size: larger;
+			font-weight: 600;
+			font-style: normal;
+
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+		}
+
+		a:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+
+main {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-image: url("fon6.jpg");
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	justify-content: center;
+	background-size: cover;
+	
+	
+	.main{
+		width: 50%;
+		margin-top: 150px;
+		
+		.post{
+			border: 1px solid green;
+			border-radius:15px;
+			padding: 10px;
+			background-color: #fbcff4C6;
+			margin-bottom: 20px;
+			display:flex;
+			flex-flow: column;
+			img{
+				max-width:100%;
+				
+			}
+			
+			
+		}
+	}
+}
+
+	
+	
+.sidenav {
+	height: 50%;
+	margin: 140px 0 0 auto;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #fbcff4C6;
+	overflow-x: hidden;
+	float: right;
+	border: 3px solid;
+	border-radius:15px;
+  
+
+	ul li {
+		padding: 6px 6px 6px 32px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #818181;
+		display: block;
+		
+  
+		a{
+			color: black;
+		}
+	}
+
+	ul li:hover {
+		color: #f1f1f1;
+	}	
+	  
+}	
+	
+	
+
+.podval{
+	text-align: center;
+	 font-family:Arial Narrow;
+	 color: white;
+	 float: bottom;
+	 background-color: white;
+	padding-bottom: 5px;
+	font-size: 19px;
+}
+
+.anchor{
+   display:block;
+   height:130px; 
+   margin-top:-130px; 
+   visibility:hidden;
+}
